@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>gauntlet</id>
+    <version>7.0</version>
+    <packageSourceUrl>https://github.com/project-gauntlet/chocolatey-package</packageSourceUrl>
+    <owners>Exidex</owners>
+    <title>Gauntlet</title>
+    <authors>Exidex</authors>
+    <projectUrl>https://github.com/project-gauntlet/gauntlet</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/project-gauntlet/gauntlet/main/assets/linux/icon_256.png</iconUrl>
+    <licenseUrl>https://www.mozilla.org/en-US/MPL/2.0/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/project-gauntlet/gauntlet</projectSourceUrl>
+    <docsUrl>https://github.com/project-gauntlet/gauntlet</docsUrl>
+    <bugTrackerUrl>https://github.com/project-gauntlet/gauntlet/issues</bugTrackerUrl>
+    <tags>gauntlet application-launcher open-source</tags>
+    <description>Gauntlet - Open-source cross-platform application launcher</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools"/>
+  </files>
+</package>
