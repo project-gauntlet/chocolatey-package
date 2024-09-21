@@ -14,8 +14,10 @@
     <projectSourceUrl>https://github.com/project-gauntlet/gauntlet</projectSourceUrl>
     <docsUrl>https://github.com/project-gauntlet/gauntlet</docsUrl>
     <bugTrackerUrl>https://github.com/project-gauntlet/gauntlet/issues</bugTrackerUrl>
+    <releaseNotes>https://github.com/project-gauntlet/gauntlet/blob/main/CHANGELOG.md</releaseNotes>
     <tags>gauntlet application-launcher open-source</tags>
-    <description>Gauntlet - Open-source cross-platform application launcher</description>
+    <summary>Open-source cross-platform application launcher</summary>
+    <description>Gauntlet is an open-source cross-platform application launcher</description>
   </metadata>
   <files>
     <file src="tools\**" target="tools"/>
