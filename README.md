@@ -13,7 +13,7 @@ choco pack
 ## Test
 https://docs.chocolatey.org/en-us/create/create-packages/#testing-your-package
 ```
-choco install gauntlet --debug --verbose --source .
+choco install gauntlet --debug --verbose --source . --force
 choco uninstall gauntlet
 ```
 
