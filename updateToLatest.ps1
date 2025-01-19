@@ -22,6 +22,9 @@ git add gauntlet.nuspec tools/chocolateyinstall.ps1
 git commit -m "Gauntlet $tagName"
 git push
 
+$sourceUrl = 'https://push.chocolatey.org/'
+$apikey = $env:CHOCOLATEY_API_KEY
+
 choco pack
-choco apikey --api-key $env:CHOCOLATEY_API_KEY --source https://push.chocolatey.org/
+choco apikey --api-key $apikey --source $sourceUrl
 choco push gauntlet.$version.0.0.nupkg --source $sourceUrl
