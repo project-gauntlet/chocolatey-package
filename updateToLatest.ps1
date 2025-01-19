@@ -26,5 +26,4 @@ $sourceUrl = 'https://push.chocolatey.org/'
 $apikey = $env:CHOCOLATEY_API_KEY
 
 choco pack
-choco apikey --api-key $apikey --source $sourceUrl
-choco push gauntlet.$version.0.0.nupkg --source $sourceUrl
+choco push gauntlet.$version.0.0.nupkg --api-key=$apikey --source=$sourceUrl
