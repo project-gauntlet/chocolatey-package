@@ -16,4 +16,5 @@ jobs:
           git config --global user.email $githubActorId+$githubActor@users.noreply.github.com
       - run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
       - run: .\updateToLatest.ps1
-
+        env:
+          CHOCOLATEY_API_KEY: ${{ secrets.CHOCOLATEY_API_KEY }}
