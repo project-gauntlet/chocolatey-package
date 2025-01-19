@@ -7,8 +7,13 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
-      - run: git config --global user.name "${GITHUB_ACTOR}"
-      - run: git config --global user.email "${GITHUB_ACTOR_ID}+${GITHUB_ACTOR}@users.noreply.github.com"
+      - run: |
+          $githubActor = $env:GITHUB_ACTOR
+          git config --global user.name $githubActor
+      - run: |
+          $githubActorId = $env:GITHUB_ACTOR_ID
+          $githubActor = $env:GITHUB_ACTOR
+          git config --global user.email $githubActorId+$githubActor@users.noreply.github.com
       - run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
       - run: .\updateToLatest.ps1
 

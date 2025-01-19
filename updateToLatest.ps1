@@ -1,3 +1,5 @@
+$ErrorActionPreference = 'Stop'
+
 $releaseData = Invoke-RestMethod -Uri "https://api.github.com/repos/project-gauntlet/gauntlet/releases/latest"
 
 $tagName = $releaseData.tag_name
@@ -21,5 +23,5 @@ git commit -m "Gauntlet $tagName"
 git push
 
 choco pack
-choco apikey --api-key $env:CHOCOLATEY_API_KEY --source "https://push.chocolatey.org/"
-choco push "gauntlet.$version.0.0.nupkg" --source $sourceUrl
+choco apikey --api-key $env:CHOCOLATEY_API_KEY --source https://push.chocolatey.org/
+choco push gauntlet.$version.0.0.nupkg --source $sourceUrl
